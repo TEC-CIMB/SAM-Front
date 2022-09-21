@@ -8,7 +8,7 @@
   >
     <img class="h-12" src="2.png" alt="sensor" />
     <a href="/cargar" class="hover:text-yellow-300">Load files</a>
-    <button class="hover:text-yellow-300">Add Comments</button>
+    <a href="/Comments" class="hover:text-yellow-300">Add Comments</a>
     <button class="hover:text-yellow-300">Help</button>
   </div>
 
