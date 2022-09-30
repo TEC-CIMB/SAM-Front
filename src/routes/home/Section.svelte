@@ -6,7 +6,7 @@
 
 <div class="flex grow flex-row">
   <div class="flex basis-1/4 bg-[#eaedf0]">
-    <div class="m-5 bg-white">
+    <div class="m-5 bg-white p-5">
       {#each files as file}
         <div>
           <input
