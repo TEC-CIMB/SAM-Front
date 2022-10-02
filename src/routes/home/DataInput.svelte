@@ -7,6 +7,13 @@
   };
   let filesClick;
   export let files = [];
+  export let name;
+  export let date;
+  export let test;
+  export let age;
+  export let weight;
+  export let height;
+  export let gender;
 </script>
 
 <div class="grow bg-[#eaedf0] px-44 py-44 pt-10 pb-10">
@@ -16,6 +23,7 @@
         Date
       </label>
       <input
+        bind:value={date}
         class="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none"
         id="date"
         type="text"
@@ -27,6 +35,7 @@
         Test Name
       </label>
       <input
+        bind:value={test}
         class="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none"
         id="test"
         type="text"
@@ -38,6 +47,7 @@
         Patient Name
       </label>
       <input
+        bind:value={name}
         class="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none"
         id="user"
         type="text"
@@ -49,6 +59,7 @@
         Age
       </label>
       <input
+        bind:value={age}
         class="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none"
         id="age"
         type="text"
@@ -59,6 +70,7 @@
         Gender
       </label>
       <input
+        bind:value={gender}
         class="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none"
         id="gender"
         type="text"
@@ -69,6 +81,7 @@
         Weight
       </label>
       <input
+        bind:value={weight}
         class="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none"
         id="weight"
         type="text"
@@ -79,6 +92,7 @@
         Height
       </label>
       <input
+        bind:value={height}
         class="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none"
         id="height"
         type="text"
@@ -110,7 +124,6 @@
           on:click={() => {
             step = "section";
           }}
-          href="/home/section"
           class="flex h-8 w-32 justify-center rounded bg-[#022352e0] p-1 font-bold text-white hover:bg-[#02235259]"
           >Save</button
         >
