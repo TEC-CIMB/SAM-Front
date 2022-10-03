@@ -2,11 +2,12 @@
   import SelGrap from "./SelGrap.svelte";
   import Joints from "./Joints.svelte";
   export let selection;
+  export let comments;
 </script>
 
 <div class="flex grow">
   <div class="flex basis-1/3 bg-[#eaedf0]">
-    <Joints bind:selection />
+    <Joints bind:selection bind:comments />
   </div>
   <div class="flex basis-1 bg-[#555353]" />
   <SelGrap {selection} />

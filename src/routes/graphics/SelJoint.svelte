@@ -1,3 +1,9 @@
+<script>
+  export let Kcheck = false;
+  export let Hcheck = false;
+  export let Acheck = false;
+</script>
+
 <h3 class="mb-2 text-lg font-bold">Joints</h3>
 <ul
   class="w-full rounded-lg border border-gray-200 bg-white text-sm font-medium text-gray-900"
@@ -7,7 +13,7 @@
       <input
         id="vue-checkbox"
         type="checkbox"
-        value=""
+        bind:checked={Kcheck}
         class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500"
       />
       <label
@@ -22,7 +28,7 @@
       <input
         id="vue-checkbox"
         type="checkbox"
-        value=""
+        bind:checked={Hcheck}
         class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500"
       />
       <label
@@ -37,7 +43,7 @@
       <input
         id="vue-checkbox"
         type="checkbox"
-        value=""
+        bind:checked={Acheck}
         class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500"
       />
       <label

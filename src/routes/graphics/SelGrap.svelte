@@ -3,5 +3,5 @@
 </script>
 
 {#if selection !== null}
-  <div class="flex items-center justify-center">Datos importados de python</div>
+  <div class="flex items-center justify-center">data python</div>
 {/if}
