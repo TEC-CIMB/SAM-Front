@@ -1,7 +1,9 @@
 <script>
   import DataInput from "./DataInput.svelte";
   import Section from "./Section.svelte";
+
   let step = "input";
+  export let screen;
   export let files;
   export let name;
   export let date;
@@ -25,5 +27,5 @@
     bind:gender
   />
 {:else if step == "section"}
-  <Section {files} />
+  <Section {files} bind:screen />
 {/if}

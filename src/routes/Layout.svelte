@@ -1,12 +1,19 @@
 <script>
+  import { loop_guard } from "svelte/internal";
   import "../app.css";
+  export let screen;
 </script>
 
 <div class="flex h-screen flex-col">
   <div class="flex flex-row items-center justify-between  bg-[#022352ca] p-2">
     <img class="h-12 px-7" src="2.png" alt="sensor" />
     <div class="flex flex-row gap-6 pr-5 font-bold text-white">
-      <a href="/home">
+      <button
+        on:click={() => {
+          screen = "home";
+          console.log(screen);
+        }}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -22,8 +29,12 @@
             points="9 22 9 12 15 12 15 22"
           /></svg
         >
-      </a>
-      <a href="/save">
+      </button>
+      <button
+        on:click={() => {
+          screen = "save";
+        }}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -41,8 +52,12 @@
             points="7 3 7 8 15 8"
           /></svg
         >
-      </a>
-      <a href="/help">
+      </button>
+      <button
+        on:click={() => {
+          screen = "help";
+        }}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -58,7 +73,7 @@
             d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"
           /><line x1="12" y1="17" x2="12.01" y2="17" /></svg
         >
-      </a>
+      </button>
     </div>
   </div>
   <div class="flex h-1 bg-[#555353] text-xs text-[#555353]">.</div>

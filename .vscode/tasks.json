@@ -1,0 +1,12 @@
+{
+    "tasks": [
+        {
+            "type": "npm",
+            "script": "dev",
+            "problemMatcher": [],
+            "isBackground": true,
+            "label": "dev",
+            "detail": "vite dev"
+        },
+    ]
+}

@@ -1,8 +1,8 @@
 <script>
   import SelGrap from "./SelGrap.svelte";
   import Joints from "./Joints.svelte";
-  export let selection;
-  export let comments;
+  export let selection = null;
+  export let comments = null;
 </script>
 
 <div class="flex grow">

@@ -1,6 +1,7 @@
 <script>
   export let files;
   export let section = null;
+  export let screen;
   let questions = [`Lower section`, `Upper section`, `Full body`];
 </script>
 
@@ -33,12 +34,14 @@
       {/each}
     </select>
     {#if section !== null}
-      <a
+      <button
+        on:click={() => {
+          screen = "graphics";
+        }}
         class="mt-10 flex justify-center rounded bg-[#022352e0] p-1 font-bold text-white hover:bg-[#02235259]"
-        href="/graphics"
       >
         Show graphics
-      </a>
+      </button>
     {/if}
   </div>
 </div>
