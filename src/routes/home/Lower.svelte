@@ -1,6 +1,6 @@
 <div
   class="flex h-screen w-full flex-col justify-center bg-center bg-no-repeat pt-4"
-  style="background-image: url(/full.svg)"
+  style="background-image: url(/lower.svg)"
 >
   <div class="basis-1/4 place-self-center font-bold text-[#022352f1]">
     Front view
@@ -72,7 +72,7 @@
 </div>
 <div
   class="flex h-screen w-full flex-col justify-center bg-center bg-no-repeat pt-4"
-  style="background-image: url(/full.svg)"
+  style="background-image: url(/lower.svg)"
 >
   <div class="basis-1/5">
     <div class="flex flex-col">
