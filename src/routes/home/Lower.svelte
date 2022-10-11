@@ -3,53 +3,54 @@
     Front view
   </div>
   <div class="relative">
-    <div><img class="mt-10 mb-10 w-full" src="lw.svg" alt="lower" /></div>
-
-    <div
-      class="absolute top-0 grid h-full w-full grid-cols-2 place-content-around"
-    >
-      <input
-        id="RadioSensors"
-        type="radio"
-        value="Rshl"
-        name="bordered-radio2"
-        class="absolute right-32 bottom-20 border-gray-300 bg-gray-100 text-blue-600"
-      />
-      <input
-        id="RadioSensors"
-        type="radio"
-        value="Rshl"
-        name="bordered-radio2"
-        class="absolute left-7 right-48 bottom-20 border-gray-300 bg-gray-100 pb-48 text-blue-600"
-      />
-      <input
-        id="RadioSensors"
-        type="radio"
-        value="Rshl"
-        name="bordered-radio2"
-        class="absolute right-32 bottom-48 border-gray-300 bg-gray-100 text-blue-600"
-      />
-      <input
-        id="RadioSensors"
-        type="radio"
-        value="Rshl"
-        name="bordered-radio2"
-        class="absolute bottom-48 right-72 left-32 border-gray-300 bg-gray-100 text-blue-600"
-      />
-      <input
-        id="RadioSensors"
-        type="radio"
-        value="Rshl"
-        name="bordered-radio2"
-        class="absolute top-40 left-36 border-gray-300 bg-gray-100 text-blue-600"
-      />
-      <input
-        id="RadioSensors"
-        type="radio"
-        value="Rshl"
-        name="bordered-radio2"
-        class="absolute left-64 right-20 top-40 border-gray-300 bg-gray-100 text-blue-600"
-      />
+    <img class="mt-10 mb-10 w-full" src="lw.svg" alt="lower" />
+    <div class="static">
+      <div
+        class="absolute top-0 grid h-full w-full grid-cols-2 place-content-around"
+      >
+        <input
+          id="RadioSensors"
+          type="radio"
+          value="Rshl"
+          name="bordered-radio2"
+          class="border-gray-300 bg-gray-100 text-blue-600"
+        />
+        <input
+          id="RadioSensors"
+          type="radio"
+          value="Rshl"
+          name="bordered-radio2"
+          class="border-gray-300 bg-gray-100 pb-48 text-blue-600"
+        />
+        <input
+          id="RadioSensors"
+          type="radio"
+          value="Rshl"
+          name="bordered-radio2"
+          class="static right-32 bottom-48 border-gray-300 bg-gray-100 text-blue-600"
+        />
+        <input
+          id="RadioSensors"
+          type="radio"
+          value="Rshl"
+          name="bordered-radio2"
+          class="static bottom-48 right-72 left-32 border-gray-300 bg-gray-100 text-blue-600"
+        />
+        <input
+          id="RadioSensors"
+          type="radio"
+          value="Rshl"
+          name="bordered-radio2"
+          class="static top-40 left-36 border-gray-300 bg-gray-100 text-blue-600"
+        />
+        <input
+          id="RadioSensors"
+          type="radio"
+          value="Rshl"
+          name="bordered-radio2"
+          class="static left-64 right-20 top-40 border-gray-300 bg-gray-100 text-blue-600"
+        />
+      </div>
     </div>
   </div>
 </div>
