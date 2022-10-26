@@ -1,44 +1,78 @@
 <script>
+  import Lower from "./Lower.svelte";
+  import Upper from "./Upper.svelte";
+  import Full from "./Full.svelte";
+
   export let files;
   export let section = null;
   export let screen;
-  let questions = [`Lower section`, `Upper section`, `Full body`];
 </script>
 
-<div class="m-6 flex grow flex-col rounded bg-white p-2 shadow-2xl">
-  <div class="mt-6 ml-8 mr-16">
-    <h3 class="mb-3 mt-3 text-sm font-bold">Choose and place the sensor</h3>
-    {#each files as file}
-      <div class="ml-2 w-full rounded border border-gray-200">
+<div class="m-6 flex grow flex-col rounded bg-white shadow-2xl">
+  <div class="mt-6 ml-8 mr-16 items-center justify-center">
+    <h3 class="mb-2 text-lg font-medium text-gray-900 dark:text-white">
+      Select a section:
+    </h3>
+    <ul class="grid w-full grid-cols-1 gap-2">
+      <li>
         <input
-          id="RadioSensors"
           type="radio"
-          value="S1"
-          name="bordered-radio"
-          class="ml-2 h-4 border-gray-300 bg-gray-100 text-blue-600"
+          id="Low"
+          name="hosting"
+          class="peer hidden"
+          required
         />
-        <label for="RadioSensors" class="mt-2 text-sm font-medium text-gray-900"
-          >{file.name}</label
+        <label
+          on:click={() => {
+            section = "Lower Section";
+          }}
+          for="Low"
+          class="inline-flex w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-600 peer-checked:border-blue-600 peer-checked:text-blue-600"
         >
-      </div>
-    {/each}
-  </div>
+          <div class="w-full">Lower Section</div>
+        </label>
+      </li>
+      <li>
+        <input type="radio" id="Up" name="hosting" class="peer hidden" />
+        <label
+          on:click={() => {
+            section = "Upper Section";
+          }}
+          for="Up"
+          class="inline-flex w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-600 peer-checked:border-blue-600 peer-checked:text-blue-600"
+        >
+          <div class="w-full">Upper Section</div>
+        </label>
+      </li>
+      <li>
+        <input type="radio" id="Full" name="hosting" class="peer hidden" />
 
-  <div class="m-10 flex flex-col items-center justify-center">
-    <div class="mb-3 text-sm font-bold">Select a section:</div>
-    <select class="bg-gray-200 shadow-2xl" bind:value={section}>
-      {#each questions as question}
-        <option value={question}>
-          {question}
-        </option>
-      {/each}
-    </select>
+        <label
+          on:click={() => {
+            section = "Full Body";
+          }}
+          for="Full"
+          class="inline-flex w-full cursor-pointer items-center justify-between rounded-lg border border-gray-200 bg-white p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-600 peer-checked:border-blue-600 peer-checked:text-blue-600"
+        >
+          <div class="w-full">Full Body</div>
+        </label>
+      </li>
+    </ul>
+  </div>
+  <div class="mt-6 flex flex-col gap-3">
     {#if section !== null}
+      {#if section == "Lower Section"}
+        <Lower {files} />
+      {:else if section == "Upper Section"}
+        <Upper {files} />
+      {:else if section == "Full Body"}
+        <Full {files} />
+      {/if}
       <button
         on:click={() => {
           screen = "graphics";
         }}
-        class="mt-10 flex justify-center rounded bg-[#022352e0] p-1 font-bold text-white hover:bg-[#02235259]"
+        class="mt-10 flex w-48 justify-center self-center rounded bg-[#022352e0] p-1 font-bold text-white hover:bg-[#02235259]"
       >
         Show graphics
       </button>

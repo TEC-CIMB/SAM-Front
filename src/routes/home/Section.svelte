@@ -3,7 +3,7 @@
   import PlaceHuman from "./PlaceHuman.svelte";
   export let files;
   export let screen;
-  let section;
+  export let section;
 </script>
 
 <div class="flex grow">

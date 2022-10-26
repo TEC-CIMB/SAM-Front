@@ -24,7 +24,7 @@
       </label>
       <input
         bind:value={date}
-        class="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none"
+        class="w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow"
         id="date"
         type="text"
         placeholder="dd/mm/aaaa"
@@ -36,7 +36,7 @@
       </label>
       <input
         bind:value={test}
-        class="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none"
+        class="w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow"
         id="test"
         type="text"
         placeholder="Flexion-Extension"
@@ -48,7 +48,7 @@
       </label>
       <input
         bind:value={name}
-        class="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none"
+        class="w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow"
         id="user"
         type="text"
         placeholder="Jane Doe"
@@ -60,7 +60,7 @@
       </label>
       <input
         bind:value={age}
-        class="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none"
+        class="w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow"
         id="age"
         type="text"
       />
@@ -82,7 +82,7 @@
       </label>
       <input
         bind:value={weight}
-        class="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none"
+        class="w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow"
         id="weight"
         type="text"
       />

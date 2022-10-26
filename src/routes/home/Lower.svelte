@@ -1,33 +1,34 @@
-<div class="flex h-screen w-full flex-col">
-  <div class="mt-4 place-self-center font-bold text-[#022352f1]">
-    Front view
-  </div>
-  <div class="relative">
-    <img class="mt-10 mb-10 w-full" src="lw.svg" alt="lower" />
-    <div class="static">
-      <div class="absolute top-10 grid h-full w-full grid-cols-2">
-        <input
-          id="RadioSensors"
-          type="radio"
-          value="Rshl"
-          name="bordered-radio2"
-          class="w-4 border-gray-300 bg-gray-100 text-blue-600"
-        />
-      </div>
-      <div class="absolute left-36 top-48 h-full w-full">
-        <input
-          id="RadioSensors"
-          type="radio"
-          value="Rshl"
-          name="bordered-radio2"
-          class="w-4 border-gray-300 bg-gray-100 pb-48 text-blue-600"
-        />
-      </div>
-    </div>
-  </div>
-</div>
+<script>
+  let questions = [
+    `R Femur`,
+    `R Tibia`,
+    `R food`,
+    `R Hip`,
+    `L Femur`,
+    `L Tibia`,
+    `L food`,
+    `L Hip`,
+  ];
+  export let files;
+  let sensor = Array(files.lenght);
+</script>
 
-<div class="flex h-screen w-full flex-col">
-  <div class="mt-4 place-self-center font-bold text-[#022352f1]">Back view</div>
-  <img class="mt-10 mb-10 w-full" src="lw.svg" alt="lower" />
+<h2 class="mb-2 ml-8">Select the sensor location</h2>
+<div
+  class="ml-16 mr-16 flex flex-col justify-center gap-2 rounded border shadow"
+>
+  {#each files as file, i}
+    <div class="ml-4 mt-1 text-sm font-medium text-gray-900">{file.name}</div>
+    <select
+      class="ml-8 mr-8 mb-2 bg-gray-200 shadow-2xl"
+      bind:value={sensor[i]}
+    >
+      <option disabled selected>Select</option>
+      {#each questions as question}
+        <option value={question}>
+          {question}
+        </option>
+      {/each}
+    </select>
+  {/each}
 </div>

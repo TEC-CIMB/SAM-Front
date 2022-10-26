@@ -1,17 +1,17 @@
 <script>
-  import Full from "./Full.svelte";
-  import Lower from "./Lower.svelte";
-  import Upper from "./Upper.svelte";
-
   export let section;
 </script>
 
-<div class="flex grow justify-center">
-  {#if section == "Lower section"}
-    <Lower />
-  {:else if section == "Upper section"}
-    <Upper />
-  {:else if section == "Full body"}
-    <Full />
-  {/if}
-</div>
+{#if section == "Lower Section"}
+  <div class="ml-24 mr-24 mt-5 flex justify-evenly">
+    <img class="h-screen w-full" src="Low.svg" alt="lower" />
+  </div>
+{:else if section == "Upper Section"}
+  <div class="flex items-center justify-center">
+    <img src="Upper.svg" alt="upper" />
+  </div>
+{:else if section == "Full Body"}
+  <div class="ml-24 mr-24 mt-5 flex justify-evenly">
+    <img class="h-screen w-full" src="Full.svg" alt="full" />
+  </div>
+{/if}
