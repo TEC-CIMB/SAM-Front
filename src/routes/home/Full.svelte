@@ -2,11 +2,11 @@
   let questions = [
     `R Femur`,
     `R Tibia`,
-    `R food`,
+    `R Foot`,
     `R Hip`,
     `L Femur`,
     `L Tibia`,
-    `L food`,
+    `L Foot`,
     `L Hip`,
     `R Shoulder`,
     `R Bicep`,

@@ -12,6 +12,6 @@
   </div>
 {:else if section == "Full Body"}
   <div class="ml-24 mr-24 mt-5 flex justify-evenly">
-    <img class="h-screen w-full" src="Full.svg" alt="Full" />
+    <img class="h-screen w-full" src="full.jpg" alt="Full" />
   </div>
 {/if}
