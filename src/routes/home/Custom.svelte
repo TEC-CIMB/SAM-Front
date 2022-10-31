@@ -6,6 +6,7 @@
   export let files;
   export let section = null;
   export let screen;
+  let sensor = [];
 </script>
 
 <div class="m-6 flex grow flex-col rounded bg-white shadow-2xl">
@@ -62,20 +63,29 @@
   <div class="mt-6 flex flex-col gap-3">
     {#if section !== null}
       {#if section == "Lower Section"}
-        <Lower {files} />
+        <Lower {files} bind:sensor />
       {:else if section == "Upper Section"}
-        <Upper {files} />
+        <Upper {files} bind:sensor />
       {:else if section == "Full Body"}
-        <Full {files} />
+        <Full {files} bind:sensor />
       {/if}
-      <button
-        on:click={() => {
-          screen = "graphics";
-        }}
-        class="mt-10 flex w-48 justify-center self-center rounded bg-[#022352e0] p-1 font-bold text-white hover:bg-[#02235259]"
-      >
-        Show graphics
-      </button>
+
+      {#if sensor.includes("Select")}
+        <button
+          class="mt-10 mb-8 flex w-48 cursor-not-allowed justify-center self-center rounded bg-[#022352e0] p-1 font-bold text-white hover:bg-[#02235259] "
+        >
+          Show graphics
+        </button>
+      {:else}
+        <button
+          on:click={() => {
+            screen = "graphics";
+          }}
+          class="mt-10 mb-8 flex w-48 justify-center self-center rounded bg-[#022352e0] p-1 font-bold text-white hover:bg-[#02235259]"
+        >
+          Show graphics
+        </button>
+      {/if}
     {/if}
   </div>
 </div>

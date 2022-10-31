@@ -71,7 +71,7 @@
       </label>
       <input
         bind:value={gender}
-        class="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none"
+        class="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow"
         id="gender"
         type="text"
       />
@@ -93,7 +93,7 @@
       </label>
       <input
         bind:value={height}
-        class="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow focus:outline-none"
+        class="focus:shadow-outline w-full appearance-none rounded border py-2 px-3 leading-tight text-gray-700 shadow"
         id="height"
         type="text"
       />

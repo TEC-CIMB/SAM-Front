@@ -22,7 +22,7 @@
     `Lumbar`,
   ];
   export let files;
-  let sensor = Array(files.lenght);
+  export let sensor = Array(files.lenght);
 </script>
 
 <h2 class="mb-2 ml-8">Select the sensor location</h2>
