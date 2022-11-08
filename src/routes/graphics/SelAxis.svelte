@@ -19,7 +19,7 @@
       <label
         for="vue-checkbox"
         class="ml-2 w-full py-3 text-sm font-medium text-gray-900"
-        >Up-Down
+        >Flexion-Extension
       </label>
     </div>
   </li>
@@ -34,7 +34,7 @@
       <label
         for="vue-checkbox"
         class="ml-2 w-full py-3 text-sm font-medium text-gray-900"
-        >Right-Left
+        >Abduction-Adduction
       </label>
     </div>
   </li>
@@ -49,7 +49,7 @@
       <label
         for="vue-checkbox"
         class="ml-2 w-full py-3 text-sm font-medium text-gray-900"
-        >Front-Back
+        >Rotation
       </label>
     </div>
   </li>

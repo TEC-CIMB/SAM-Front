@@ -14,6 +14,14 @@
   let height;
   let gender;
   let comments;
+
+  export let Kcheck;
+  export let Hcheck;
+  export let Acheck;
+
+  export let UPcheck;
+  export let FBcheck;
+  export let RLcheck;
 </script>
 
 <Layout bind:screen>
@@ -33,9 +41,32 @@
       bind:gender
     />
   {:else if screen == "graphics"}
-    <Graphics bind:comments />
+    <Graphics
+      bind:comments
+      bind:Kcheck
+      bind:Hcheck
+      bind:Acheck
+      bind:UPcheck
+      bind:FBcheck
+      bind:RLcheck
+    />
   {:else if screen == "save"}
-    <Save {name} {date} {test} {age} {weight} {height} {gender} {comments} />
+    <Save
+      {name}
+      {date}
+      {test}
+      {age}
+      {weight}
+      {height}
+      {gender}
+      {comments}
+      {Kcheck}
+      {Hcheck}
+      {Acheck}
+      {UPcheck}
+      {FBcheck}
+      {RLcheck}
+    />
   {:else if screen == "help"}
     <Help />
   {/if}

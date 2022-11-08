@@ -7,6 +7,14 @@
   export let height;
   export let gender;
   export let comments;
+
+  export let Kcheck;
+  export let Hcheck;
+  export let Acheck;
+
+  export let UPcheck;
+  export let FBcheck;
+  export let RLcheck;
 </script>
 
 <div class="flex grow bg-[#eaedf0]">
@@ -64,7 +72,60 @@
     </div>
     <div class="col-span-3 col-start-1 mt-16 flex-col">
       <div class="mb-10 flex justify-center font-bold">Graphics:</div>
-      <div class="flex justify-center"><img src="exp.jpg" alt="" /></div>
+      <div class="m-10 grid grow grid-cols-2 items-center justify-center gap-4">
+        {#if Kcheck}
+          {#if UPcheck}
+            <div class="w-full">
+              <img src="AnglesD1_IClau_SNat.png" alt="knee" />
+            </div>
+          {/if}
+          {#if FBcheck}
+            <div class="w-full">
+              <img src="AnglesD2_IClau_SNat.png" alt="knee" />
+            </div>
+          {/if}
+          {#if RLcheck}
+            <div class="w-full">
+              <img src="AnglesD1_IJose_SNat.png" alt="knee" />
+            </div>
+          {/if}
+        {/if}
+        {#if Hcheck}
+          {#if UPcheck}
+            <div class="w-full">
+              <img src="AnglesD2_IJose_SNat.png" alt="knee" />
+            </div>
+          {/if}
+          {#if FBcheck}
+            <div class="w-full">
+              <img src="AnglesD2_IClau_SNat.png" alt="knee" />
+            </div>
+          {/if}
+          {#if RLcheck}
+            <div class="w-full">
+              <img src="AnglesD1_IJose_SNat.png" alt="knee" />
+            </div>
+          {/if}
+        {/if}
+
+        {#if Acheck}
+          {#if UPcheck}
+            <div class="w-full">
+              <img src="AnglesD1_IClau_SNat.png" alt="knee" />
+            </div>
+          {/if}
+          {#if FBcheck}
+            <div class="w-full">
+              <img src="AnglesD2_IClau_SNat.png" alt="knee" />
+            </div>
+          {/if}
+          {#if RLcheck}
+            <div class="w-full">
+              <img src="AnglesD1_IJose_SNat.png" alt="knee" />
+            </div>
+          {/if}
+        {/if}
+      </div>
     </div>
     <div class="col-span-3 col-start-1 mt-16 flex-col">
       <div class="mb-10 flex justify-center font-bold">Comments:</div>
